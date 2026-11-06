@@ -7,20 +7,26 @@
 
 This repository contains **only signed test installers and update manifests**; the source code is private.
 
-## Download (test PCs only)
+## Download (test PCs and kiosks only)
 
 **Prinstant Desktop (Windows), latest test build:**
 [Prinstant-Desktop-Setup.exe](https://github.com/InstantBookIndia/prinstant-releases-dev/releases/download/desktop-dev-channel/Prinstant-Desktop-Setup.exe)
 
+**PRINSTANT Kiosk (Ubuntu 26.04), latest test build:**
+[Prinstant-Kiosk-Setup.deb](https://github.com/InstantBookIndia/prinstant-releases-dev/releases/download/kiosk-dev-channel/Prinstant-Kiosk-Setup.deb)
+
 ## How updates work
 
-Test builds of the desktop app check this repository for updates when they open. Every installer is signed, and the
-app verifies the signature before installing, so an unsigned or modified file is never installed.
+Test builds check this repository for updates: the desktop app when it opens, kiosks at night (12 AM and 6 AM).
+Every installer is signed, and the app verifies the signature before installing, so an unsigned or modified file is
+never installed.
 
 | Release | Purpose |
 |---|---|
 | `desktop-vX.Y.Z-dev.N` | A desktop test build |
 | `desktop-dev-channel` | What test PCs update to. Do not delete. |
+| `kiosk-vX.Y.Z-dev.N` | A kiosk test build |
+| `kiosk-dev-channel` | What test kiosks update to. Do not delete. |
 
 ## Notes
 
